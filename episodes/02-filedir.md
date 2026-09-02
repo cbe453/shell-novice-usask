@@ -50,15 +50,15 @@ current working directory, i.e. 'here', so knowing where you are before running
 a command is important. `pwd` shows you where you are:
 
 ```bash
-`[nsid@platolgn001]` $ pwd
+[abc123@platolgn001 ~] $ pwd
 ```
 
 ```output
-/Users/nelle
+/home/nelle
 ```
 
 Here,
-the computer's response is `/Users/nelle`,
+the computer's response is `/home/abc123`,
 which is Nelle's **home directory**:
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -66,11 +66,11 @@ which is Nelle's **home directory**:
 ## Home Directory Variation
 
 The home directory path will look different on different operating systems.
-On Linux, it may look like `/home/nelle`,
+On MacOS, it may look like `/home/nelle`,
 and on Windows, it will be similar to `C:\Documents and Settings\nelle` or
-`C:\Users\nelle`.
+`C:\home\nelle`.
 (Note that it may look slightly different for different versions of Windows.)
-In future examples, we've used Mac output as the default - Linux and Windows
+In future examples, we've used Linux output as the default - MacOS and Windows
 output may differ slightly but should be generally similar.
 
 We will also assume that your `pwd` command returns your user's home directory.
@@ -97,19 +97,19 @@ The filesystem looks like an upside down tree.
 The topmost directory  is the **root directory**
 that holds everything else.
 We refer to it using a slash character, `/`, on its own;
-this character is the leading slash in `/Users/nelle`.
+this character is the leading slash in `/home/nelle`.
 
 Inside that directory are several other directories:
 `bin` (which is where some built-in programs are stored),
 `data` (for miscellaneous data files),
-`Users` (where users' personal directories are located),
+`home` (where home' personal directories are located),
 `tmp` (for temporary files that don't need to be stored long-term),
 and so on.
 
-We know that our current working directory `/Users/nelle` is stored inside `/Users`
-because `/Users` is the first part of its name.
+We know that our current working directory `/home/nelle` is stored inside `/home`
+because `/home` is the first part of its name.
 Similarly,
-we know that `/Users` is stored inside the root directory `/`
+we know that `/home` is stored inside the root directory `/`
 because its name begins with `/`.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -124,16 +124,16 @@ it's just a separator.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Underneath `/Users`,
+Underneath `/home`,
 we find one directory for each user with an account on Nelle's machine,
 her colleagues *imhotep* and *larry*.
 
-![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/Users" like "/Users/imhotep", "/Users/larry" or"/Users/nelle"'}
+![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/home" like "/home/imhotep", "/home/larry" or"/home/nelle"'}
 
-The user *imhotep*'s files are stored in `/Users/imhotep`,
-user *larry*'s in `/Users/larry`,
-and Nelle's in `/Users/nelle`. Nelle is the user in our
-examples here; therefore, we get `/Users/nelle` as our home directory.
+The user *imhotep*'s files are stored in `/home/imhotep`,
+user *larry*'s in `/home/larry`,
+and Nelle's in `/home/nelle`. Nelle is the user in our
+examples here; therefore, we get `/home/nelle` as our home directory.
 Typically, when you open a new command prompt, you will be in
 your home directory to start.
 
@@ -462,10 +462,10 @@ the `shell-lesson-data` directory, then into the `exercise-data` directory.
 You will notice that `cd` doesn't print anything. This is normal.
 Many shell commands will not output anything to the screen when successfully executed.
 But if we run `pwd` after it, we can see that we are now
-in `/Users/nelle/Desktop/shell-lesson-data/exercise-data`.
+in `/home/nelle/Desktop/shell-lesson-data/exercise-data`.
 
 If we run `ls -F` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/shell-lesson-data/exercise-data`,
+it lists the contents of `/home/nelle/Desktop/shell-lesson-data/exercise-data`,
 because that's where we now are:
 
 ```bash
@@ -473,7 +473,7 @@ $ pwd
 ```
 
 ```output
-/Users/nelle/Desktop/shell-lesson-data/exercise-data
+/home/nelle/Desktop/shell-lesson-data/exercise-data
 ```
 
 ```bash
@@ -514,14 +514,14 @@ $ cd ..
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
-if we run `pwd` after running `cd ..`, we're back in `/Users/nelle/Desktop/shell-lesson-data`:
+if we run `pwd` after running `cd ..`, we're back in `/home/nelle/Desktop/shell-lesson-data`:
 
 ```bash
 $ pwd
 ```
 
 ```output
-/Users/nelle/Desktop/shell-lesson-data
+/home/nelle/Desktop/shell-lesson-data
 ```
 
 The special directory `..` doesn't usually show up when we run `ls`. If we want
@@ -537,7 +537,7 @@ $ ls -F -a
 
 `-a` stands for 'show all' (including hidden files);
 it forces `ls` to show us file and directory names that begin with `.`,
-such as `..` (which, if we're in `/Users/nelle`, refers to the `/Users` directory).
+such as `..` (which, if we're in `/home/nelle`, refers to the `/home` directory).
 As you can see,
 it also displays another special directory that's just called `.`,
 which means 'the current working directory'.
@@ -579,7 +579,7 @@ $ pwd
 ```
 
 ```output
-/Users/nelle
+/home/nelle
 ```
 
 It turns out that `cd` without an argument will return you to your home directory,
@@ -620,11 +620,11 @@ $ pwd
 ```
 
 ```output
-/Users/nelle/Desktop/shell-lesson-data/exercise-data
+/home/nelle/Desktop/shell-lesson-data/exercise-data
 ```
 
 ```bash
-$ cd /Users/nelle/Desktop/shell-lesson-data
+$ cd /home/nelle/Desktop/shell-lesson-data
 ```
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
@@ -635,9 +635,9 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 
 The shell interprets a tilde (`~`) character at the start of a path to
 mean "the current user's home directory". For example, if Nelle's home
-directory is `/Users/nelle`, then `~/data` is equivalent to
-`/Users/nelle/data`. This only works if it is the first character in the
-path; `here/there/~/elsewhere` is *not* `here/there/Users/nelle/elsewhere`.
+directory is `/home/nelle`, then `~/data` is equivalent to
+`/home/nelle/data`. This only works if it is the first character in the
+path; `here/there/~/elsewhere` is *not* `here/there/home/nelle/elsewhere`.
 
 Another shortcut is the `-` (dash) character. `cd` will translate `-` into
 *the previous directory I was in*, which is faster than having to remember,
@@ -679,9 +679,9 @@ Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/c
 
 ## Absolute vs Relative Paths
 
-Starting from `/Users/nelle/data`,
+Starting from `/home/nelle/data`,
 which of the following commands could Nelle use to navigate to her home directory,
-which is `/Users/nelle`?
+which is `/home/nelle`?
 
 1. `cd .`
 2. `cd /`
@@ -699,9 +699,9 @@ which is `/Users/nelle`?
 
 1. No: `.` stands for the current directory.
 2. No: `/` stands for the root directory.
-3. No: Nelle's home directory is `/Users/nelle`.
-4. No: this command goes up two levels, i.e. ends in `/Users`.
-5. Yes: `~` stands for the user's home directory, in this case `/Users/nelle`.
+3. No: Nelle's home directory is `/home/nelle`.
+4. No: this command goes up two levels, i.e. ends in `/home`.
+5. Yes: `~` stands for the user's home directory, in this case `/home/nelle`.
 6. No: this command would navigate into a directory `home` in the current directory
   if it exists.
 7. Yes: unnecessarily complicated, but correct.
@@ -718,7 +718,7 @@ which is `/Users/nelle`?
 
 ## Relative Path Resolution
 
-Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
+Using the filesystem diagram below, if `pwd` displays `/home/thing`,
 what will `ls -F ../backup` display?
 
 1. `../backup: No such file or directory`
@@ -726,17 +726,17 @@ what will `ls -F ../backup` display?
 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
 4. `original/ pnas_final/ pnas_sub/`
 
-![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
+![](fig/filesystem-challenge.svg){alt='A directory tree below the home directory where "/home" contains the directories "backup" and "thing"; "/home/backup" contains "original","pnas\_final" and "pnas\_sub"; "/home/thing" contains "backup"; and"/home/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
 
 :::::::::::::::  solution
 
 ## Solution
 
-1. No: there *is* a directory `backup` in `/Users`.
-2. No: this is the content of `Users/thing/backup`,
+1. No: there *is* a directory `backup` in `/home`.
+2. No: this is the content of `home/thing/backup`,
   but with `..`, we asked for one level further up.
 3. No: see previous explanation.
-4. Yes: `../backup/` refers to `/Users/backup/`.
+4. Yes: `../backup/` refers to `/home/backup/`.
   
   
 
@@ -749,7 +749,7 @@ what will `ls -F ../backup` display?
 ## `ls` Reading Comprehension
 
 Using the filesystem diagram below,
-if `pwd` displays `/Users/backup`,
+if `pwd` displays `/home/backup`,
 and `-r` tells `ls` to display things in reverse order,
 what command(s) will result in the following output:
 
@@ -757,11 +757,11 @@ what command(s) will result in the following output:
 pnas_sub/ pnas_final/ original/
 ```
 
-![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
+![](fig/filesystem-challenge.svg){alt='A directory tree below the home directory where "/home" contains the directories "backup" and "thing"; "/home/backup" contains "original","pnas\_final" and "pnas\_sub"; "/home/thing" contains "backup"; and"/home/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
 
 1. `ls pwd`
 2. `ls -r -F`
-3. `ls -r -F /Users/backup`
+3. `ls -r -F /home/backup`
 
 :::::::::::::::  solution
 
@@ -845,7 +845,7 @@ $ ls -F /
 
 ```output
 Applications/         System/
-Library/              Users/
+Library/              home/
 Network/              Volumes/
 ```
 
