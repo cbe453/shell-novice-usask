@@ -2,21 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="54.999542mm"
    height="29.271mm"
    version="1.1"
    viewBox="0 0 54.99902 29.270101"
    id="svg66"
    sodipodi:docname="filesystem.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs70" />
   <sodipodi:namedview
@@ -32,13 +32,17 @@
      inkscape:window-height="914"
      id="namedview68"
      showgrid="false"
-     inkscape:zoom="0.94556546"
-     inkscape:cx="-4.5036637"
-     inkscape:cy="53.902889"
-     inkscape:window-x="1522"
-     inkscape:window-y="61"
+     inkscape:zoom="5.348926"
+     inkscape:cx="96.654918"
+     inkscape:cy="52.907818"
+     inkscape:window-x="114"
+     inkscape:window-y="59"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg66" />
+     inkscape:current-layer="g32"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -47,27 +51,27 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <text
      id="text6"
      xml:space="preserve"
-     style="font-size:9.87779999px;line-height:125%;font-family:'Courier New';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+     style="font-size:9.8778px;line-height:125%;font-family:'Courier New';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458px"
      word-spacing="0px"
      letter-spacing="0px"
      font-size="9.8778px"
      y="-21.24707"
      x="16.163895"><tspan
-       style="font-size:9.87779999px;font-family:'Courier New';stroke-width:0.26458001px"
+       style="font-size:9.8778px;font-family:'Courier New';stroke-width:0.26458px"
        id="tspan4"
        font-size="9.8778px"
        y="-12.458045"
        x="16.163895" /></text>
   <g
      id="g5168"
-     transform="matrix(0.27410381,0,0,0.27410381,-2.0447329e-5,-0.00113397)">
+     transform="matrix(0.27410381,0,0,0.27410381,0.14837242,-0.05059826)">
     <g
        id="g5136">
       <image
@@ -81,14 +85,14 @@
       <text
          id="text58"
          xml:space="preserve"
-         style="font-style:italic;font-size:3.43959999px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+         style="font-style:italic;font-size:3.4396px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458px"
          word-spacing="0px"
          letter-spacing="0px"
          font-style="italic"
          font-size="3.4396px"
          y="20.980509"
          x="96.504074"><tspan
-           style="font-style:normal;font-size:12.69999981px;font-family:'Courier New';stroke-width:0.26458001px"
+           style="font-style:normal;font-size:12.7px;font-family:'Courier New';stroke-width:0.26458px"
            id="tspan56"
            font-style="normal"
            font-size="12.7px"
@@ -107,14 +111,14 @@
            height="4.0632"
            rx="1.5"
            id="rect8"
-           style="fill:#d4aa00;stroke:#d4aa00;stroke-width:0.26458001" />
+           style="fill:#d4aa00;stroke:#d4aa00;stroke-width:0.26458" />
         <rect
            x="21.966"
            y="83.863998"
            width="6.0560002"
            height="6.3395"
            id="rect10"
-           style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.35065001" />
+           style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.35065" />
         <rect
            x="21.966"
            y="83.863998"
@@ -122,19 +126,19 @@
            height="31.75"
            rx="3"
            id="rect12"
-           style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.26458001" />
+           style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.26458" />
       </g>
       <text
          id="text62"
          xml:space="preserve"
-         style="font-style:italic;font-size:3.43959999px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+         style="font-style:italic;font-size:3.4396px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458px"
          word-spacing="0px"
          letter-spacing="0px"
          font-style="italic"
          font-size="3.4396px"
          y="92.989944"
          x="11.743464"><tspan
-           style="font-style:normal;font-size:11.28899956px;font-family:'Courier New';stroke-width:0.26458001px"
+           style="font-style:normal;font-size:11.289px;font-family:'Courier New';stroke-width:0.26458px"
            id="tspan60"
            font-style="normal"
            font-size="11.289px"
@@ -159,7 +163,7 @@
          font-style="italic"
          letter-spacing="0px"
          word-spacing="0px"
-         style="font-style:italic;font-size:3.43959999px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+         style="font-style:italic;font-size:3.4396px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458px"
          xml:space="preserve"
          id="text22"><tspan
            x="62.371502"
@@ -167,7 +171,7 @@
            font-size="11.289px"
            font-style="normal"
            id="tspan20"
-           style="font-style:normal;font-size:11.28899956px;font-family:'Courier New';stroke-width:0.26458001px">data</tspan></text>
+           style="font-style:normal;font-size:11.289px;font-family:'Courier New';stroke-width:0.26458px">data</tspan></text>
     </g>
     <g
        transform="translate(-2.93978,-16.809)"
@@ -187,15 +191,15 @@
          font-style="italic"
          letter-spacing="0px"
          word-spacing="0px"
-         style="font-style:italic;font-size:3.43959999px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+         style="font-style:italic;font-size:3.4396px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:35.8642;fill:#000000;stroke-width:0.26458px"
          xml:space="preserve"
-         id="text30"><tspan
+         id="text30"
+         transform="translate(3.4287064,0.18045823)"><tspan
            x="112.75932"
            y="109.53134"
-           font-size="11.289px"
-           font-style="normal"
-           id="tspan28"
-           style="font-style:normal;font-size:11.28899956px;font-family:'Courier New';stroke-width:0.26458001px">Users</tspan></text>
+           id="tspan2"><tspan
+             style="font-style:normal;font-size:11.289px;font-family:'Courier New'"
+             id="tspan1">home</tspan></tspan></text>
     </g>
     <g
        transform="translate(-1.9456015,-16.809)"
@@ -215,7 +219,7 @@
          font-style="italic"
          letter-spacing="0px"
          word-spacing="0px"
-         style="font-style:italic;font-size:3.43959999px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001px"
+         style="font-style:italic;font-size:3.4396px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458px"
          xml:space="preserve"
          id="text38"><tspan
            x="170.53221"
@@ -223,7 +227,7 @@
            font-size="11.289px"
            font-style="normal"
            id="tspan36"
-           style="font-style:normal;font-size:11.28899956px;font-family:'Courier New';stroke-width:0.26458001px">tmp</tspan></text>
+           style="font-style:normal;font-size:11.289px;font-family:'Courier New';stroke-width:0.26458px">tmp</tspan></text>
     </g>
     <g
        id="g4708">
@@ -265,19 +269,12 @@
          y="53.951962"
          x="182.59846"
          id="image4699"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABOCAYAAADCQC3lAAAABHNCSVQICAgIfAhkiAAAAT5JREFU
-WIXlmEFKxTAQhr+0aXnPrlwIHsC1+7cW8RoewAO49SquvYtXEQTlqe/FRTKNCEVxpjDPDpSmtP06
-fyYzSRquH1K6fwSAoYe+5UcLobZTgrsLuNmEEN92sE/5xvO2PnTUQR9ze93BqnxkFfM1QNfC0MHx
-Ol9HAX23l/d8ADy9TrhY3r08K7A0AfuVFbkiu5ny7A9MGgMWjXimklnMVGb1TM+qnpnILGfHMm3H
-mVuZ7qI5TwboUcbRrDL1rJkCYCGztRy0Yjbp1AhMz/oSAINw+k10mdlNxllrGoBZ6tlSJhTTqqFn
-zVVp3U3CAvUbAJM+GxPdbW76XQX526EIdCnFUc86iHG2kD7Tsw5irWGgc1y661HVHO4D/O5Q/KeT
-qWcGrNEcy/zfnonF81M9RP6Hx9srTrSwYc8HwCeTo45a7Ly3bQAAAABJRU5ErkJggg==
-"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABOCAYAAADCQC3lAAAABHNCSVQICAgIfAhkiAAAAT5JREFU WIXlmEFKxTAQhr+0aXnPrlwIHsC1+7cW8RoewAO49SquvYtXEQTlqe/FRTKNCEVxpjDPDpSmtP06 fyYzSRquH1K6fwSAoYe+5UcLobZTgrsLuNmEEN92sE/5xvO2PnTUQR9ze93BqnxkFfM1QNfC0MHx Ol9HAX23l/d8ADy9TrhY3r08K7A0AfuVFbkiu5ny7A9MGgMWjXimklnMVGb1TM+qnpnILGfHMm3H mVuZ7qI5TwboUcbRrDL1rJkCYCGztRy0Yjbp1AhMz/oSAINw+k10mdlNxllrGoBZ6tlSJhTTqqFn zVVp3U3CAvUbAJM+GxPdbW76XQX526EIdCnFUc86iHG2kD7Tsw5irWGgc1y661HVHO4D/O5Q/KeT qWcGrNEcy/zfnonF81M9RP6Hx9srTrSwYc8HwCeTo45a7Ly3bQAAAABJRU5ErkJggg== "
          preserveAspectRatio="none"
          height="20.637304"
          width="5.0270357" />
       <path
-         style="fill:none;stroke:#007aff;stroke-width:3.95677257;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none"
+         style="fill:none;stroke:#007aff;stroke-width:3.95677;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path42"
          d="m 74.830846,55.854268 c -109.630335,-0.04871 0.593957,0 55.559094,0.02436 54.96517,0.02436 54.66819,0.02436 54.4702,0.02436 h -0.54402 0.14774 c -109.830316,-0.04871 0,0 -109.630334,-0.04871 z" />
