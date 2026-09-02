@@ -640,14 +640,14 @@ are:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="kw">`</span><span class="ex">[nsid@platolgn001]</span><span class="kw">`</span> $ pwd</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="ex">[abc123@platolgn001</span> ~] $ pwd</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle</code></pre>
+<pre class="output" tabindex="0"><code>/home/nelle</code></pre>
 </div>
-<p>Here, the computer’s response is <code>/Users/nelle</code>, which is
+<p>Here, the computer’s response is <code>/home/abc123</code>, which is
 Nelle’s <strong>home directory</strong>:</p>
 <div id="home-directory-variation" class="callout">
 <div class="callout-square">
@@ -658,12 +658,12 @@ Nelle’s <strong>home directory</strong>:</p>
 <h3 class="callout-title">Home Directory Variation</h3>
 <div class="callout-content">
 <p>The home directory path will look different on different operating
-systems. On Linux, it may look like <code>/home/nelle</code>, and on
+systems. On MacOS, it may look like <code>/home/nelle</code>, and on
 Windows, it will be similar to
 <code>C:\Documents and Settings\nelle</code> or
-<code>C:\Users\nelle</code>. (Note that it may look slightly different
-for different versions of Windows.) In future examples, we’ve used Mac
-output as the default - Linux and Windows output may differ slightly but
+<code>C:\home\nelle</code>. (Note that it may look slightly different
+for different versions of Windows.) In future examples, we’ve used Linux
+output as the default - MacOS and Windows output may differ slightly but
 should be generally similar.</p>
 <p>We will also assume that your <code>pwd</code> command returns your
 user’s home directory. If <code>pwd</code> returns something different,
@@ -683,15 +683,15 @@ exactly identical.</p>
 <figure><img src="fig/filesystem.svg" alt="The file system is made up of a root directory that contains sub-directories titled bin, data, users, and tmp" class="figure mx-auto d-block"></figure><p>The filesystem looks like an upside down tree. The topmost directory
 is the <strong>root directory</strong> that holds everything else. We
 refer to it using a slash character, <code>/</code>, on its own; this
-character is the leading slash in <code>/Users/nelle</code>.</p>
+character is the leading slash in <code>/home/nelle</code>.</p>
 <p>Inside that directory are several other directories: <code>bin</code>
 (which is where some built-in programs are stored), <code>data</code>
-(for miscellaneous data files), <code>Users</code> (where users’
-personal directories are located), <code>tmp</code> (for temporary files
-that don’t need to be stored long-term), and so on.</p>
-<p>We know that our current working directory <code>/Users/nelle</code>
-is stored inside <code>/Users</code> because <code>/Users</code> is the
-first part of its name. Similarly, we know that <code>/Users</code> is
+(for miscellaneous data files), <code>home</code> (where home’ personal
+directories are located), <code>tmp</code> (for temporary files that
+don’t need to be stored long-term), and so on.</p>
+<p>We know that our current working directory <code>/home/nelle</code>
+is stored inside <code>/home</code> because <code>/home</code> is the
+first part of its name. Similarly, we know that <code>/home</code> is
 stored inside the root directory <code>/</code> because its name begins
 with <code>/</code>.</p>
 <div id="slashes" class="callout">
@@ -709,16 +709,15 @@ separator.</p>
 </div>
 </div>
 </div>
-<p>Underneath <code>/Users</code>, we find one directory for each user
+<p>Underneath <code>/home</code>, we find one directory for each user
 with an account on Nelle’s machine, her colleagues <em>imhotep</em> and
 <em>larry</em>.</p>
-<figure><img src="fig/home-directories.svg" alt='Like other directories, home directories are sub-directories underneath "/Users" like "/Users/imhotep", "/Users/larry" or"/Users/nelle"' class="figure mx-auto d-block"></figure><p>The user <em>imhotep</em>’s files are stored in
-<code>/Users/imhotep</code>, user <em>larry</em>’s in
-<code>/Users/larry</code>, and Nelle’s in <code>/Users/nelle</code>.
-Nelle is the user in our examples here; therefore, we get
-<code>/Users/nelle</code> as our home directory. Typically, when you
-open a new command prompt, you will be in your home directory to
-start.</p>
+<figure><img src="fig/home-directories.svg" alt='Like other directories, home directories are sub-directories underneath "/home" like "/home/imhotep", "/home/larry" or"/home/nelle"' class="figure mx-auto d-block"></figure><p>The user <em>imhotep</em>’s files are stored in
+<code>/home/imhotep</code>, user <em>larry</em>’s in
+<code>/home/larry</code>, and Nelle’s in <code>/home/nelle</code>. Nelle
+is the user in our examples here; therefore, we get
+<code>/home/nelle</code> as our home directory. Typically, when you open
+a new command prompt, you will be in your home directory to start.</p>
 <p>Now let’s learn the command that will let us see the contents of our
 own filesystem. We can see what’s in our home directory by running
 <code>ls</code>:</p>
@@ -1097,10 +1096,10 @@ into the <code>exercise-data</code> directory. You will notice that
 commands will not output anything to the screen when successfully
 executed. But if we run <code>pwd</code> after it, we can see that we
 are now in
-<code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code>.</p>
+<code>/home/nelle/Desktop/shell-lesson-data/exercise-data</code>.</p>
 <p>If we run <code>ls -F</code> without arguments now, it lists the
 contents of
-<code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code>,
+<code>/home/nelle/Desktop/shell-lesson-data/exercise-data</code>,
 because that’s where we now are:</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1110,7 +1109,7 @@ because that’s where we now are:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code></pre>
+<pre class="output" tabindex="0"><code>/home/nelle/Desktop/shell-lesson-data/exercise-data</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1151,7 +1150,7 @@ works as follows:</p>
 containing this one”, or more succinctly, the <strong>parent</strong> of
 the current directory. Sure enough, if we run <code>pwd</code> after
 running <code>cd ..</code>, we’re back in
-<code>/Users/nelle/Desktop/shell-lesson-data</code>:</p>
+<code>/home/nelle/Desktop/shell-lesson-data</code>:</p>
 <div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1160,7 +1159,7 @@ running <code>cd ..</code>, we’re back in
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle/Desktop/shell-lesson-data</code></pre>
+<pre class="output" tabindex="0"><code>/home/nelle/Desktop/shell-lesson-data</code></pre>
 </div>
 <p>The special directory <code>..</code> doesn’t usually show up when we
 run <code>ls</code>. If we want to display it, we can add the
@@ -1178,7 +1177,7 @@ run <code>ls</code>. If we want to display it, we can add the
 <p><code>-a</code> stands for ‘show all’ (including hidden files); it
 forces <code>ls</code> to show us file and directory names that begin
 with <code>.</code>, such as <code>..</code> (which, if we’re in
-<code>/Users/nelle</code>, refers to the <code>/Users</code> directory).
+<code>/home/nelle</code>, refers to the <code>/home</code> directory).
 As you can see, it also displays another special directory that’s just
 called <code>.</code>, which means ‘the current working directory’. It
 may seem redundant to have a name for it, but we’ll see some uses for it
@@ -1226,7 +1225,7 @@ answer!</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle</code></pre>
+<pre class="output" tabindex="0"><code>/home/nelle</code></pre>
 </div>
 <p>It turns out that <code>cd</code> without an argument will return you
 to your home directory, which is great if you’ve got lost in your own
@@ -1269,12 +1268,12 @@ move to <code>shell-lesson-data</code>.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code></pre>
+<pre class="output" tabindex="0"><code>/home/nelle/Desktop/shell-lesson-data/exercise-data</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1" aria-label="code-block-36-1"></a><span class="ex">$</span> cd /Users/nelle/Desktop/shell-lesson-data</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1" aria-label="code-block-36-1"></a><span class="ex">$</span> cd /home/nelle/Desktop/shell-lesson-data</span></code></pre>
 </div>
 <p>Run <code>pwd</code> and <code>ls -F</code> to ensure that we’re in
 the directory we expect.</p>
@@ -1288,11 +1287,11 @@ the directory we expect.</p>
 <div class="callout-content">
 <p>The shell interprets a tilde (<code>~</code>) character at the start
 of a path to mean “the current user’s home directory”. For example, if
-Nelle’s home directory is <code>/Users/nelle</code>, then
-<code>~/data</code> is equivalent to <code>/Users/nelle/data</code>.
-This only works if it is the first character in the path;
+Nelle’s home directory is <code>/home/nelle</code>, then
+<code>~/data</code> is equivalent to <code>/home/nelle/data</code>. This
+only works if it is the first character in the path;
 <code>here/there/~/elsewhere</code> is <em>not</em>
-<code>here/there/Users/nelle/elsewhere</code>.</p>
+<code>here/there/home/nelle/elsewhere</code>.</p>
 <p>Another shortcut is the <code>-</code> (dash) character.
 <code>cd</code> will translate <code>-</code> into <em>the previous
 directory I was in</em>, which is faster than having to remember, then
@@ -1337,9 +1336,9 @@ Run <code>cd -</code> again and you’re back in
 <div id="absolute-vs-relative-paths" class="callout-inner">
 <h3 class="callout-title">Absolute vs Relative Paths</h3>
 <div class="callout-content">
-<p>Starting from <code>/Users/nelle/data</code>, which of the following
+<p>Starting from <code>/home/nelle/data</code>, which of the following
 commands could Nelle use to navigate to her home directory, which is
-<code>/Users/nelle</code>?</p>
+<code>/home/nelle</code>?</p>
 <ol style="list-style-type: decimal">
 <li><code>cd .</code></li>
 <li><code>cd /</code></li>
@@ -1364,11 +1363,11 @@ commands could Nelle use to navigate to her home directory, which is
 <ol style="list-style-type: decimal">
 <li>No: <code>.</code> stands for the current directory.</li>
 <li>No: <code>/</code> stands for the root directory.</li>
-<li>No: Nelle’s home directory is <code>/Users/nelle</code>.</li>
+<li>No: Nelle’s home directory is <code>/home/nelle</code>.</li>
 <li>No: this command goes up two levels, i.e. ends in
-<code>/Users</code>.</li>
+<code>/home</code>.</li>
 <li>Yes: <code>~</code> stands for the user’s home directory, in this
-case <code>/Users/nelle</code>.</li>
+case <code>/home/nelle</code>.</li>
 <li>No: this command would navigate into a directory <code>home</code>
 in the current directory if it exists.</li>
 <li>Yes: unnecessarily complicated, but correct.</li>
@@ -1388,7 +1387,7 @@ in the current directory if it exists.</li>
 <h3 class="callout-title">Relative Path Resolution</h3>
 <div class="callout-content">
 <p>Using the filesystem diagram below, if <code>pwd</code> displays
-<code>/Users/thing</code>, what will <code>ls -F ../backup</code>
+<code>/home/thing</code>, what will <code>ls -F ../backup</code>
 display?</p>
 <ol style="list-style-type: decimal">
 <li><code>../backup: No such file or directory</code></li>
@@ -1396,7 +1395,7 @@ display?</p>
 <li><code>2012-12-01/ 2013-01-08/ 2013-01-27/</code></li>
 <li><code>original/ pnas_final/ pnas_sub/</code></li>
 </ol>
-<figure><img src="fig/filesystem-challenge.svg" alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"' class="figure mx-auto d-block"></figure>
+<figure><img src="fig/filesystem-challenge.svg" alt='A directory tree below the home directory where "/home" contains the directories "backup" and "thing"; "/home/backup" contains "original","pnas_final" and "pnas_sub"; "/home/thing" contains "backup"; and"/home/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"' class="figure mx-auto d-block"></figure>
 </div>
 </div>
 </div>
@@ -1409,12 +1408,12 @@ display?</p>
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: there <em>is</em> a directory <code>backup</code> in
-<code>/Users</code>.</li>
-<li>No: this is the content of <code>Users/thing/backup</code>, but with
+<code>/home</code>.</li>
+<li>No: this is the content of <code>home/thing/backup</code>, but with
 <code>..</code>, we asked for one level further up.</li>
 <li>No: see previous explanation.</li>
 <li>Yes: <code>../backup/</code> refers to
-<code>/Users/backup/</code>.</li>
+<code>/home/backup/</code>.</li>
 </ol>
 </div>
 </div>
@@ -1430,7 +1429,7 @@ display?</p>
 <code>ls</code> Reading Comprehension</h3>
 <div class="callout-content">
 <p>Using the filesystem diagram below, if <code>pwd</code> displays
-<code>/Users/backup</code>, and <code>-r</code> tells <code>ls</code> to
+<code>/home/backup</code>, and <code>-r</code> tells <code>ls</code> to
 display things in reverse order, what command(s) will result in the
 following output:</p>
 <div class="codewrapper">
@@ -1438,10 +1437,10 @@ following output:</p>
 </h3>
 <pre class="output" tabindex="0"><code>pnas_sub/ pnas_final/ original/</code></pre>
 </div>
-<figure><img src="fig/filesystem-challenge.svg" alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"' class="figure mx-auto d-block"></figure><ol style="list-style-type: decimal">
+<figure><img src="fig/filesystem-challenge.svg" alt='A directory tree below the home directory where "/home" contains the directories "backup" and "thing"; "/home/backup" contains "original","pnas_final" and "pnas_sub"; "/home/thing" contains "backup"; and"/home/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"' class="figure mx-auto d-block"></figure><ol style="list-style-type: decimal">
 <li><code>ls pwd</code></li>
 <li><code>ls -r -F</code></li>
-<li><code>ls -r -F /Users/backup</code></li>
+<li><code>ls -r -F /home/backup</code></li>
 </ol>
 </div>
 </div>
@@ -1537,7 +1536,7 @@ command is given below:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Applications/         System/
-Library/              Users/
+Library/              home/
 Network/              Volumes/</code></pre>
 </div>
 <div class="section level3">
