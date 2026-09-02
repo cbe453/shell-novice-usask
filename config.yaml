@@ -81,6 +81,13 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
+workshop_host: "Plato"
+workshop_host_id: "USask_Plato"
+workshop_host_login: "plato.usask.ca"
+workshop_host_location: "University of Saskatchewan"
+workshop_host_prompt: "[nsid@platolgn001 ~]$ "
+workshop_host_homedir: "/home"
+workshop_sched_id: "USask_Plato_slurm"
 
 url: 'https://swcarpentry.github.io/shell-novice'
 analytics: carpentries
