@@ -50,7 +50,7 @@ current working directory, i.e. 'here', so knowing where you are before running
 a command is important. `pwd` shows you where you are:
 
 ```bash
-$ pwd
+`[nsid@platolgn001]` $ pwd
 ```
 
 ```output
