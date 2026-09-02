@@ -54,21 +54,21 @@ a command is important. `pwd` shows you where you are:
 ```
 
 ```output
-/home/nelle
+/home/abc123
 ```
 
 Here,
 the computer's response is `/home/abc123`,
-which is Nelle's **home directory**:
+which is a **home directory**:
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Home Directory Variation
 
 The home directory path will look different on different operating systems.
-On MacOS, it may look like `/home/nelle`,
-and on Windows, it will be similar to `C:\Documents and Settings\nelle` or
-`C:\home\nelle`.
+On MacOS, it may look like `/home/abc123`,
+and on Windows, it will be similar to `C:\Documents and Settings\abc123` or
+`C:\home\abc123`.
 (Note that it may look slightly different for different versions of Windows.)
 In future examples, we've used Linux output as the default - MacOS and Windows
 output may differ slightly but should be generally similar.
@@ -85,11 +85,11 @@ on the `cd` command.
 To understand what a 'home directory' is,
 let's have a look at how the file system as a whole is organized.  For the
 sake of this example, we'll be
-illustrating the filesystem on our scientist Nelle's computer.  After this
+illustrating the filesystem on Plato, the USask HPC cluster.  After this
 illustration, you'll be learning commands to explore your own filesystem,
 which will be constructed in a similar way, but not be exactly identical.
 
-On Nelle's computer, the filesystem looks like this:
+On Plato, the filesystem looks something like this:
 
 ![](fig/filesystem.svg){alt='The file system is made up of a root directory that contains sub-directories titled bin, data, users, and tmp'}
 
@@ -97,7 +97,7 @@ The filesystem looks like an upside down tree.
 The topmost directory  is the **root directory**
 that holds everything else.
 We refer to it using a slash character, `/`, on its own;
-this character is the leading slash in `/home/nelle`.
+this character is the leading slash in `/home/abc123`.
 
 Inside that directory are several other directories:
 `bin` (which is where some built-in programs are stored),
@@ -106,7 +106,7 @@ Inside that directory are several other directories:
 `tmp` (for temporary files that don't need to be stored long-term),
 and so on.
 
-We know that our current working directory `/home/nelle` is stored inside `/home`
+We know that our current working directory `/home/abc123` is stored inside `/home`
 because `/home` is the first part of its name.
 Similarly,
 we know that `/home` is stored inside the root directory `/`
@@ -125,15 +125,15 @@ it's just a separator.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Underneath `/home`,
-we find one directory for each user with an account on Nelle's machine,
+we find one directory for each user with an account on abc123's machine,
 her colleagues *imhotep* and *larry*.
 
-![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/home" like "/home/imhotep", "/home/larry" or"/home/nelle"'}
+![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/home" like "/home/imhotep", "/home/larry" or"/home/abc123"'}
 
-The user *imhotep*'s files are stored in `/home/imhotep`,
-user *larry*'s in `/home/larry`,
-and Nelle's in `/home/nelle`. Nelle is the user in our
-examples here; therefore, we get `/home/nelle` as our home directory.
+The user *abc234*'s files are stored in `/home/abc234`,
+user *cba321*'s in `/home/cba321`,
+and abc123's in `/home/abc123`. abc123 is the user in our
+examples here; therefore, we get `/home/abc123` as our home directory.
 Typically, when you open a new command prompt, you will be in
 your home directory to start.
 
@@ -145,8 +145,7 @@ $ ls
 ```
 
 ```output
-Applications Documents    Library      Music        Public
-Desktop      Downloads    Movies       Pictures
+data   projects    software    test
 ```
 
 (Again, your results may be slightly different depending on your operating
@@ -170,8 +169,7 @@ $ ls -F
 ```
 
 ```output
-Applications/ Documents/    Library/      Music/        Public/
-Desktop/      Downloads/    Movies/       Pictures/
+data/   projects/    software/    test/
 ```
 
 Here,
@@ -391,10 +389,10 @@ see if a new output file was written.
 
 Not only can we use `ls` on the current working directory,
 but we can use it to list the contents of a different directory.
-Let's take a look at our `Desktop` directory by running `ls -F Desktop`,
+Let's take a look at our `home` directory by running `ls -F /home/abc123`,
 i.e.,
-the command `ls` with the `-F` **option** and the [**argument**][Arguments]  `Desktop`.
-The argument `Desktop` tells `ls` that
+the command `ls` with the `-F` **option** and the [**argument**][Arguments]  `/home/abc123`.
+The argument `/home/abc123` tells `ls` that
 we want a listing of something other than our current working directory:
 
 ```bash
@@ -405,29 +403,26 @@ $ ls -F Desktop
 shell-lesson-data/
 ```
 
-Note that if a directory named `Desktop` does not exist in your current working directory,
-this command will return an error. Typically, a `Desktop` directory exists in your
-home directory, which we assume is the current working directory of your bash shell.
+Note that if a directory named `/home/abc123` does not exist in your current working directory,
+this command will return an error.
 
 Your output should be a list of all the files and sub-directories in your
-Desktop directory, including the `shell-lesson-data` directory you downloaded at
-the [setup for this lesson](../learners/setup.md). (On most systems, the
-contents of the `Desktop` directory in the shell will show up as icons in a graphical
-user interface behind all the open windows. See if this is the case for you.)
+home directory, including the `shell-lesson-data` directory you downloaded at
+the [setup for this lesson](../learners/setup.md).
 
 Organizing things hierarchically helps us keep track of our work. While it's
 possible to put hundreds of files in our home directory just as it's possible to
 pile hundreds of printed papers on our desk, it's much easier to find things when
 they've been organized into sensibly-named subdirectories.
 
-Now that we know the `shell-lesson-data` directory is located in our Desktop directory, we
+Now that we know the `shell-lesson-data` directory is located in our home directory, we
 can do two things.
 
 First, using the same strategy as before, we can look at its contents by passing
 a directory name to `ls`:
 
 ```bash
-$ ls -F Desktop/shell-lesson-data
+$ ls -F shell-lesson-data
 ```
 
 ```output
@@ -452,20 +447,20 @@ Let's say we want to move into the `exercise-data` directory we saw above. We ca
 use the following series of commands to get there:
 
 ```bash
-$ cd Desktop
+$ cd /home/abc123
 $ cd shell-lesson-data
 $ cd exercise-data
 ```
 
-These commands will move us from our home directory into our Desktop directory, then into
-the `shell-lesson-data` directory, then into the `exercise-data` directory.
+These commands will move us from our home directory, then into
+the `shell-lesson-data` directory, and then into the `exercise-data` directory.
 You will notice that `cd` doesn't print anything. This is normal.
 Many shell commands will not output anything to the screen when successfully executed.
 But if we run `pwd` after it, we can see that we are now
-in `/home/nelle/Desktop/shell-lesson-data/exercise-data`.
+in `/home/abc123/shell-lesson-data/exercise-data`.
 
 If we run `ls -F` without arguments now,
-it lists the contents of `/home/nelle/Desktop/shell-lesson-data/exercise-data`,
+it lists the contents of `/home/abc123/shell-lesson-data/exercise-data`,
 because that's where we now are:
 
 ```bash
@@ -473,7 +468,7 @@ $ pwd
 ```
 
 ```output
-/home/nelle/Desktop/shell-lesson-data/exercise-data
+/home/abc123/shell-lesson-data/exercise-data
 ```
 
 ```bash
@@ -514,14 +509,14 @@ $ cd ..
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
-if we run `pwd` after running `cd ..`, we're back in `/home/nelle/Desktop/shell-lesson-data`:
+if we run `pwd` after running `cd ..`, we're back in `/home/abc123/shell-lesson-data`:
 
 ```bash
 $ pwd
 ```
 
 ```output
-/home/nelle/Desktop/shell-lesson-data
+/home/abc123/shell-lesson-data
 ```
 
 The special directory `..` doesn't usually show up when we run `ls`. If we want
@@ -537,7 +532,7 @@ $ ls -F -a
 
 `-a` stands for 'show all' (including hidden files);
 it forces `ls` to show us file and directory names that begin with `.`,
-such as `..` (which, if we're in `/home/nelle`, refers to the `/home` directory).
+such as `..` (which, if we're in `/home/abc123`, refers to the `/home` directory).
 As you can see,
 it also displays another special directory that's just called `.`,
 which means 'the current working directory'.
@@ -579,7 +574,7 @@ $ pwd
 ```
 
 ```output
-/home/nelle
+/home/abc123
 ```
 
 It turns out that `cd` without an argument will return you to your home directory,
@@ -590,7 +585,7 @@ three commands, but we can actually string together the list of directories
 to move to `exercise-data` in one step:
 
 ```bash
-$ cd Desktop/shell-lesson-data/exercise-data
+$ cd shell-lesson-data/exercise-data
 ```
 
 Check that we've moved to the right place by running `pwd` and `ls -F`.
@@ -620,11 +615,11 @@ $ pwd
 ```
 
 ```output
-/home/nelle/Desktop/shell-lesson-data/exercise-data
+/home/abc123/shell-lesson-data/exercise-data
 ```
 
 ```bash
-$ cd /home/nelle/Desktop/shell-lesson-data
+$ cd /home/abc123/shell-lesson-data
 ```
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
@@ -634,10 +629,10 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 ## Two More Shortcuts
 
 The shell interprets a tilde (`~`) character at the start of a path to
-mean "the current user's home directory". For example, if Nelle's home
-directory is `/home/nelle`, then `~/data` is equivalent to
-`/home/nelle/data`. This only works if it is the first character in the
-path; `here/there/~/elsewhere` is *not* `here/there/home/nelle/elsewhere`.
+mean "the current user's home directory". For example, if abc123's home
+directory is `/home/abc123`, then `~/data` is equivalent to
+`/home/abc123/data`. This only works if it is the first character in the
+path; `here/there/~/elsewhere` is *not* `here/there/home/abc123/elsewhere`.
 
 Another shortcut is the `-` (dash) character. `cd` will translate `-` into
 *the previous directory I was in*, which is faster than having to remember,
@@ -651,10 +646,10 @@ that the former brings you *up*, while the latter brings you *back*.
 ***
 
 Try it!
-First navigate to `~/Desktop/shell-lesson-data` (you should already be there).
+First navigate to `~/shell-lesson-data` (you should already be there).
 
 ```bash
-$ cd ~/Desktop/shell-lesson-data
+$ cd ~/shell-lesson-data
 ```
 
 Then `cd` into the `exercise-data/creatures` directory
@@ -669,8 +664,8 @@ Now if you run
 $ cd -
 ```
 
-you'll see you're back in `~/Desktop/shell-lesson-data`.
-Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/creatures`
+you'll see you're back in `~/shell-lesson-data`.
+Run `cd -` again and you're back in `~/shell-lesson-data/exercise-data/creatures`
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -679,13 +674,13 @@ Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/c
 
 ## Absolute vs Relative Paths
 
-Starting from `/home/nelle/data`,
-which of the following commands could Nelle use to navigate to her home directory,
-which is `/home/nelle`?
+Starting from `/home/abc123/data`,
+which of the following commands could abc123 use to navigate to her home directory,
+which is `/home/abc123`?
 
 1. `cd .`
 2. `cd /`
-3. `cd /home/nelle`
+3. `cd /home/`
 4. `cd ../..`
 5. `cd ~`
 6. `cd home`
@@ -699,9 +694,9 @@ which is `/home/nelle`?
 
 1. No: `.` stands for the current directory.
 2. No: `/` stands for the root directory.
-3. No: Nelle's home directory is `/home/nelle`.
+3. No: abc123's home directory is `/home/abc123`.
 4. No: this command goes up two levels, i.e. ends in `/home`.
-5. Yes: `~` stands for the user's home directory, in this case `/home/nelle`.
+5. Yes: `~` stands for the user's home directory, in this case `/home/abc123`.
 6. No: this command would navigate into a directory `home` in the current directory
   if it exists.
 7. Yes: unnecessarily complicated, but correct.
@@ -814,7 +809,7 @@ For example, `ls -s` will display the size of files and directories alongside th
 while `ls -S` will sort the files and directories by size, as shown below:
 
 ```bash
-$ cd ~/Desktop/shell-lesson-data
+$ cd ~/shell-lesson-data
 $ ls -s exercise-data
 ```
 
@@ -844,48 +839,48 @@ $ ls -F /
 ```
 
 ```output
-Applications/         System/
-Library/              home/
-Network/              Volumes/
+bin/         local/
+home/        opt/
+lib/         usr/
 ```
 
-### Nelle's Pipeline: Organizing Files
+### abc123's Pipeline: Organizing Files
 
 Knowing this much about files and directories,
-Nelle is ready to organize the files that the protein assay machine will create.
+abc123 is ready to organize the files that the protein assay machine will create.
 
-She creates a directory called `north-pacific-gyre`
-(to remind herself where the data came from),
+They create a directory called `north-pacific-gyre`
+(to remind themself where the data came from),
 which will contain the data files from the assay machine
-and her data processing scripts.
+and their data processing scripts.
 
-Each of her physical samples is labelled according to her lab's convention
+Each of their physical samples is labelled according to their lab's convention
 with a unique ten-character ID,
 such as 'NENE01729A'.
-This ID is what she used in her collection log
+This ID is what they used in her collection log
 to record the location, time, depth, and other characteristics of the sample,
-so she decides to use it within the filename of each data file.
+so they decide to use it within the filename of each data file.
 Since the output of the assay machine is plain text,
-she will call her files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
+they will call their files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
 All 1520 files will go into the same directory.
 
-Now in her current directory `shell-lesson-data`,
-Nelle can see what files she has using the command:
+Now in their current directory `shell-lesson-data`,
+abc123 can see what files they have using the command:
 
 ```bash
 $ ls north-pacific-gyre/
 ```
 
 This command is a lot to type,
-but she can let the shell do most of the work through what is called **tab completion**.
-If she types:
+but they can let the shell do most of the work through what is called **tab completion**.
+If they type:
 
 ```bash
 $ ls nor
 ```
 
-and then presses <kbd>Tab</kbd> (the tab key on her keyboard),
-the shell automatically completes the directory name for her:
+and then presses <kbd>Tab</kbd> (the tab key on their keyboard),
+the shell automatically completes the directory name:
 
 ```bash
 $ ls north-pacific-gyre/
@@ -895,7 +890,7 @@ Pressing <kbd>Tab</kbd> again does nothing,
 since there are multiple possibilities;
 pressing <kbd>Tab</kbd> twice brings up a list of all the files.
 
-If Nelle then presses <kbd>G</kbd> and then presses <kbd>Tab</kbd> again,
+If abc123 then presses <kbd>G</kbd> and then presses <kbd>Tab</kbd> again,
 the shell will append 'goo' since all files that start with 'g' share
 the first three characters 'goo'.
 
@@ -903,7 +898,7 @@ the first three characters 'goo'.
 $ ls north-pacific-gyre/goo
 ```
 
-To see all of those files, she can press <kbd>Tab</kbd> twice more.
+To see all of those files, they can press <kbd>Tab</kbd> twice more.
 
 ```bash
 ls north-pacific-gyre/goo
