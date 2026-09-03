@@ -627,11 +627,11 @@ directory).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Nelle's Pipeline: Checking Files
+## User abc123's Pipeline: Checking Files
 
-Nelle has run her samples through the assay machines
+User abc123 has run their samples through the assay machines
 and created 17 files in the `north-pacific-gyre` directory described earlier.
-As a quick check, starting from the `shell-lesson-data` directory, Nelle types:
+As a quick check, starting from the `shell-lesson-data` directory, they type:
 
 ```bash
 $ cd north-pacific-gyre
@@ -650,7 +650,7 @@ The output is 18 lines that look like this:
 ... ...
 ```
 
-Now she types this:
+Now they type this:
 
 ```bash
 $ wc -l *.txt | sort -n | head -n 5
@@ -665,12 +665,12 @@ $ wc -l *.txt | sort -n | head -n 5
 ```
 
 Whoops: one of the files is 60 lines shorter than the others.
-When she goes back and checks it,
-she sees that she did that assay at 8:00 on a Monday morning --- someone
+When they go back and checks it,
+they see that they did that assay at 8:00 on a Monday morning --- someone
 was probably in using the machine on the weekend,
-and she forgot to reset it.
+and they forgot to reset it.
 Before re-running that sample,
-she checks to see if any files have too much data:
+they checks to see if any files have too much data:
 
 ```bash
 $ wc -l *.txt | sort -n | tail -n 5
@@ -685,10 +685,10 @@ $ wc -l *.txt | sort -n | tail -n 5
 ```
 
 Those numbers look good --- but what's that 'Z' doing there in the third-to-last line?
-All of her samples should be marked 'A' or 'B';
+All of their samples should be marked 'A' or 'B';
 by convention,
-her lab uses 'Z' to indicate samples with missing information.
-To find others like it, she does this:
+their lab uses 'Z' to indicate samples with missing information.
+To find others like it, they do this:
 
 ```bash
 $ ls *Z.txt
@@ -699,13 +699,13 @@ NENE01971Z.txt    NENE02040Z.txt
 ```
 
 Sure enough,
-when she checks the log on her laptop,
+when they checks the log on their laptop,
 there's no depth recorded for either of those samples.
 Since it's too late to get the information any other way,
-she must exclude those two files from her analysis.
-She could delete them using `rm`,
-but there are actually some analyses she might do later where depth doesn't matter,
-so instead, she'll have to be careful later on to select files using the wildcard expressions
+they must exclude those two files from their analysis.
+They could delete them using `rm`,
+but there are actually some analyses they might do later where depth doesn't matter,
+so instead, they'll have to be careful later on to select files using the wildcard expressions
 `NENE*A.txt NENE*B.txt`.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
