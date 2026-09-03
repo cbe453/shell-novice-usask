@@ -551,18 +551,18 @@ judicious use of `echo` is a good debugging technique.
 
 ![](fig/shell_script_for_loop_flow_chart.svg){alt='The for loop "for filename in .dat; do echo cp $filename original-$filename;done" will successively assign the names of all ".dat" files in your current directory to the variable "$filename" and then execute the command. With the files "basilisk.dat", "minotaur.dat" and "unicorn.dat" in the current directory the loop will successively call the echo command three times and print threelines: "cp basislisk.dat original-basilisk.dat", then "cp minotaur.datoriginal-minotaur.dat" and finally "cp unicorn.datoriginal-unicorn.dat"'}
 
-## Nelle's Pipeline: Processing Files
+## User abc123's Pipeline: Processing Files
 
-Nelle is now ready to process her data files using `goostats.sh` ---
-a shell script written by her supervisor. This calculates some statistics from a
+User abc123 is now ready to process her data files using `goostats.sh` ---
+a shell script written by their supervisor. This calculates some statistics from a
 protein sample file and takes two arguments:
 
 1. an input file (containing the raw data)
 2. an output file (to store the calculated statistics)
 
-Since she's still learning how to use the shell,
-she decides to build up the required commands in stages.
-Her first step is to make sure that she can select the right input files --- remember,
+Since they're still learning how to use the shell,
+they decide to build up the required commands in stages.
+Their first step is to make sure that they can select the right input files --- remember,
 these are ones whose names end in 'A' or 'B', rather than 'Z'.
 Moving to the `north-pacific-gyre` directory, Nelle types:
 
@@ -585,10 +585,10 @@ NENE02040B.txt
 NENE02043B.txt
 ```
 
-Her next step is to decide
+The next step is to decide
 what to call the files that the `goostats.sh` analysis program will create.
 Prefixing each input file's name with 'stats' seems simple,
-so she modifies her loop to do that:
+so they modifies the loop to do that:
 
 ```bash
 $ for datafile in NENE*A.txt NENE*B.txt
@@ -606,14 +606,14 @@ NENE02040B.txt stats-NENE02040B.txt
 NENE02043B.txt stats-NENE02043B.txt
 ```
 
-She hasn't actually run `goostats.sh` yet,
-but now she's sure she can select the right files and generate the right output filenames.
+They haven't actually run `goostats.sh` yet,
+but now they're sure they can select the right files and generate the right output filenames.
 
 Typing in commands over and over again is becoming tedious,
 though,
-and Nelle is worried about making mistakes,
-so instead of re-entering her loop,
-she presses <kbd>↑</kbd>.
+and they are worried about making mistakes,
+so instead of re-entering the loop,
+they press <kbd>↑</kbd>.
 In response,
 the shell redisplays the whole loop on one line
 (using semi-colons to separate the pieces):
@@ -623,18 +623,18 @@ $ for datafile in NENE*A.txt NENE*B.txt; do echo $datafile stats-$datafile; done
 ```
 
 Using the <kbd>←</kbd>,
-Nelle navigates to the `echo` command and changes it to `bash goostats.sh`:
+they navigate to the `echo` command and change it to `bash goostats.sh`:
 
 ```bash
 $ for datafile in NENE*A.txt NENE*B.txt; do bash goostats.sh $datafile stats-$datafile; done
 ```
 
-When she presses <kbd>Enter</kbd>,
+When they press <kbd>Enter</kbd>,
 the shell runs the modified command.
 However, nothing appears to happen --- there is no output.
-After a moment, Nelle realizes that since her script doesn't print anything to the screen
-any longer, she has no idea whether it is running, much less how quickly.
-She kills the running command by typing <kbd>Ctrl</kbd>\+<kbd>C</kbd>,
+After a moment, they realize that since the script doesn't print anything to the screen
+any longer, they have no idea whether it is running, much less how quickly.
+They kill the running command by typing <kbd>Ctrl</kbd>\+<kbd>C</kbd>, then
 uses <kbd>↑</kbd> to repeat the command,
 and edits it to read:
 
@@ -653,7 +653,7 @@ and to the end using <kbd>Ctrl</kbd>\+<kbd>E</kbd>.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-When she runs her program now,
+When they run the program now,
 it produces one line of output every five seconds or so:
 
 ```output
@@ -665,15 +665,15 @@ NENE01751A.txt
 
 The reduced sample  dataset used here has 17 files.
 Thus, 17 times 5 seconds,
-tells her that her script will take about 85 seconds to run.
+tells them that the script will take about 85 seconds to run.
 The full dataset has 1520 files, which would take about 2 hours to run.
 As a final check,
-she opens another terminal window,
-goes into `north-pacific-gyre`,
-and uses `cat stats-NENE01729B.txt`
+they open another terminal window,
+go into `north-pacific-gyre`,
+and use `cat stats-NENE01729B.txt`
 to examine one of the output files.
 It looks good,
-so she decides to catch up on social media posts while waiting.
+so they decide to catch up on social media posts while waiting.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -682,7 +682,7 @@ so she decides to catch up on social media posts while waiting.
 Another way to repeat previous work is to use the `history` command to
 get a list of the last few hundred commands that have been executed, and
 then to use `!123` (where '123' is replaced by the command number) to
-repeat one of those commands. For example, if Nelle types this:
+repeat one of those commands. For example, if user abc123 types this:
 
 ```bash
 $ history | tail -n 5
@@ -697,7 +697,7 @@ stats-$datafile; done
 460  history | tail -n 5
 ```
 
-then she can re-run `goostats.sh` on the files simply by typing
+then they can re-run `goostats.sh` on the files simply by typing
 `!459`.
 
 
