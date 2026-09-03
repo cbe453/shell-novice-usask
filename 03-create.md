@@ -38,7 +38,7 @@ $ pwd
 ```
 
 ```output
-/Users/nelle/Desktop/shell-lesson-data
+/home/abc123/shell-lesson-data
 ```
 
 Next we'll move to the `exercise-data/writing` directory and see what it contains:
@@ -341,7 +341,7 @@ attempt to open the `whale.mp3` file.
 Returning to the `shell-lesson-data/exercise-data/writing` directory,
 
 ```bash
-$ cd ~/Desktop/shell-lesson-data/exercise-data/writing
+$ cd ~/shell-lesson-data/exercise-data/writing
 ```
 
 In our `thesis` directory we have a file `draft.txt`
@@ -429,7 +429,7 @@ quotes.txt
 ## Moving Files to a new folder
 
 After running the following commands,
-Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder.
+the user realizes that they put the files `sucrose.dat` and `maltose.dat` into the wrong folder.
 The files should have been placed in the `raw` folder.
 
 ```bash
@@ -441,7 +441,7 @@ $ cd analyzed
 ```
 
 Fill in the blanks to move these files to the `raw/` folder
-(i.e. the one she forgot to put them in)
+(i.e. the one they forgot to put them in)
 
 ```bash
 $ mv sucrose.dat maltose.dat ____/____
@@ -584,7 +584,7 @@ $ pwd
 ```
 
 ```output
-/Users/jamie/data
+/home/abc123/data
 ```
 
 ```bash
@@ -611,19 +611,19 @@ $ ls
 
 ## Solution
 
-We start in the `/Users/jamie/data` directory, and create a new folder called `recombined`.
+We start in the `/home/abc123/data` directory, and create a new folder called `recombined`.
 The second line moves (`mv`) the file `proteins.dat` to the new folder (`recombined`).
 The third line makes a copy of the file we just moved.
 The tricky part here is where the file was copied to.
-Recall that `..` means 'go up a level', so the copied file is now in `/Users/jamie`.
+Recall that `..` means 'go up a level', so the copied file is now in `/home/abc123`.
 Notice that `..` is interpreted with respect to the current working
 directory, **not** with respect to the location of the file being copied.
-So, the only thing that will show using ls (in `/Users/jamie/data`) is the recombined folder.
+So, the only thing that will show using ls (in `/home/abc123/data`) is the recombined folder.
 
-1. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
+1. No, see explanation above.  `proteins-saved.dat` is located at `/home/abc123`
 2. Yes
-3. No, see explanation above.  `proteins.dat` is located at `/Users/jamie/data/recombined`
-4. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
+3. No, see explanation above.  `proteins.dat` is located at `/home/abc123/data/recombined`
+4. No, see explanation above.  `proteins-saved.dat` is located at `/home/abc123`
 
 :::::::::::::::::::::::::
 
@@ -851,7 +851,7 @@ This is the solution.
 
 ## More on Wildcards
 
-Sam has a directory containing calibration data, datasets, and descriptions of
+Another user has a directory containing calibration data, datasets, and descriptions of
 the datasets:
 
 ```bash
@@ -871,23 +871,23 @@ the datasets:
 ├── backup
 │   ├── calibration
 │   └── datasets
-└── send_to_bob
+└── send_to_colleague
     ├── all_datasets_created_on_a_23rd
     └── all_november_files
 ```
 
-Before heading off to another field trip, she wants to back up her data and
-send some datasets to her colleague Bob. Sam uses the following commands
+Before heading off to another field trip, they want to back up her data and
+send some datasets to their colleague. they uses the following commands
 to get the job done:
 
 ```bash
 $ cp *dataset* backup/datasets
 $ cp ____calibration____ backup/calibration
-$ cp 2015-____-____ send_to_bob/all_november_files/
-$ cp ____ send_to_bob/all_datasets_created_on_a_23rd/
+$ cp 2015-____-____ send_to_colleague/all_november_files/
+$ cp ____ send_to_colleague/all_datasets_created_on_a_23rd/
 ```
 
-Help Sam by filling in the blanks.
+Help them by filling in the blanks.
 
 The resulting directory structure should look like this
 
@@ -920,7 +920,7 @@ The resulting directory structure should look like this
 │       ├── 2015-11-23-dataset1.txt
 │       ├── 2015-11-23-dataset2.txt
 │       └── 2015-11-23-dataset_overview.txt
-└── send_to_bob
+└── send_to_colleague
     ├── all_datasets_created_on_a_23rd
     │   ├── 2015-10-23-dataset1.txt
     │   ├── 2015-10-23-dataset2.txt
@@ -941,8 +941,8 @@ The resulting directory structure should look like this
 
 ```bash
 $ cp *calibration.txt backup/calibration
-$ cp 2015-11-* send_to_bob/all_november_files/
-$ cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
+$ cp 2015-11-* send_to_colleague/all_november_files/
+$ cp *-23-dataset* send_to_colleague/all_datasets_created_on_a_23rd/
 ```
 
 :::::::::::::::::::::::::
@@ -953,7 +953,7 @@ $ cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
 
 ## Organizing Directories and Files
 
-Jamie is working on a project, and she sees that her files aren't very well
+User abc123 is working on a project, and they sees that their files aren't very well
 organized:
 
 ```bash
@@ -965,7 +965,7 @@ analyzed/  fructose.dat    raw/   sucrose.dat
 ```
 
 The `fructose.dat` and `sucrose.dat` files contain output from her data
-analysis. What command(s) covered in this lesson does she need to run
+analysis. What command(s) covered in this lesson do they need to run
 so that the commands below will produce the output shown?
 
 ```bash
@@ -992,7 +992,7 @@ fructose.dat    sucrose.dat
 mv *.dat analyzed
 ```
 
-Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed` directory.
+User abc123 needs to move their files `fructose.dat` and `sucrose.dat` to the `analyzed` directory.
 The shell will expand \*.dat to match all .dat files in the current directory.
 The `mv` command then moves the list of .dat files to the 'analyzed' directory.
 
