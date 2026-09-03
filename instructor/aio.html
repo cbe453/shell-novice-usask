@@ -631,7 +631,7 @@ advantages.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Introducing and navigating the filesystem in the shell (covered in <a href="02-filedir.html">Navigating Files and Directories</a> section) can
 be confusing. You may have both terminal and GUI file explorer open side
@@ -786,7 +786,7 @@ working directory.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Clearing your terminal </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>If your screen gets too cluttered, you can clear your terminal using
 the <code>clear -x</code> command. You can still access previous
@@ -989,7 +989,7 @@ useful nevertheless.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The <code>-l</code> option makes <code>ls</code> use a
 <strong>l</strong>ong listing format, showing not only the
@@ -1025,7 +1025,7 @@ option to see the last changed dates.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The most recently changed file is listed last when using
 <code>-rt</code>. This can be very useful for finding your most recent
@@ -1370,7 +1370,7 @@ commands could abc123 use to navigate to her home directory, which is
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: <code>.</code> stands for the current directory.</li>
@@ -1416,7 +1416,7 @@ display?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: there <em>is</em> a directory <code>backup</code> in
@@ -1462,7 +1462,7 @@ following output:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: <code>pwd</code> is not the name of a directory.</li>
@@ -1653,7 +1653,7 @@ location.</li>
 </div>
 </section></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Working With Files and Directories</a></p>
 <hr>
-<p>Last updated on 2026-09-02 |
+<p>Last updated on 2026-09-03 |
 
         <a href="https://github.com/swcarpentry/shell-novice/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
@@ -1710,7 +1710,7 @@ the Desktop, which we can check using:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/nelle/Desktop/shell-lesson-data</code></pre>
+<pre class="output" tabindex="0"><code>/home/abc123/shell-lesson-data</code></pre>
 </div>
 <p>Next we’ll move to the <code>exercise-data/writing</code> directory
 and see what it contains:</p>
@@ -2080,7 +2080,7 @@ directory,</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a><span class="ex">$</span> cd ~/Desktop/shell-lesson-data/exercise-data/writing</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a><span class="ex">$</span> cd ~/shell-lesson-data/exercise-data/writing</span></code></pre>
 </div>
 <p>In our <code>thesis</code> directory we have a file
 <code>draft.txt</code> which isn’t a particularly informative name, so
@@ -2176,8 +2176,8 @@ directory:</p>
 <div id="moving-files-to-a-new-folder" class="callout-inner">
 <h3 class="callout-title">Moving Files to a new folder</h3>
 <div class="callout-content">
-<p>After running the following commands, Jamie realizes that she put the
-files <code>sucrose.dat</code> and <code>maltose.dat</code> into the
+<p>After running the following commands, the user realizes that they put
+the files <code>sucrose.dat</code> and <code>maltose.dat</code> into the
 wrong folder. The files should have been placed in the <code>raw</code>
 folder.</p>
 <div class="codewrapper sourceCode" id="cb28">
@@ -2190,7 +2190,7 @@ folder.</p>
 <span id="cb28-5"><a href="#cb28-5" tabindex="-1" aria-label="code-block-28-5"></a><span class="ex">$</span> cd analyzed</span></code></pre>
 </div>
 <p>Fill in the blanks to move these files to the <code>raw/</code>
-folder (i.e. the one she forgot to put them in)</p>
+folder (i.e. the one they forgot to put them in)</p>
 <div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2367,7 +2367,7 @@ sequence shown below?</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>/Users/jamie/data</code></pre>
+<pre class="output" tabindex="0"><code>/home/abc123/data</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2403,27 +2403,27 @@ sequence shown below?</p>
 </button>
 <div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
-<p>We start in the <code>/Users/jamie/data</code> directory, and create
+<p>We start in the <code>/home/abc123/data</code> directory, and create
 a new folder called <code>recombined</code>. The second line moves
 (<code>mv</code>) the file <code>proteins.dat</code> to the new folder
 (<code>recombined</code>). The third line makes a copy of the file we
 just moved. The tricky part here is where the file was copied to. Recall
 that <code>..</code> means ‘go up a level’, so the copied file is now in
-<code>/Users/jamie</code>. Notice that <code>..</code> is interpreted
+<code>/home/abc123</code>. Notice that <code>..</code> is interpreted
 with respect to the current working directory, <strong>not</strong> with
 respect to the location of the file being copied. So, the only thing
-that will show using ls (in <code>/Users/jamie/data</code>) is the
+that will show using ls (in <code>/home/abc123/data</code>) is the
 recombined folder.</p>
 <ol style="list-style-type: decimal">
 <li>No, see explanation above. <code>proteins-saved.dat</code> is
-located at <code>/Users/jamie</code>
+located at <code>/home/abc123</code>
 </li>
 <li>Yes</li>
 <li>No, see explanation above. <code>proteins.dat</code> is located at
-<code>/Users/jamie/data/recombined</code>
+<code>/home/abc123/data/recombined</code>
 </li>
 <li>No, see explanation above. <code>proteins-saved.dat</code> is
-located at <code>/Users/jamie</code>
+located at <code>/home/abc123</code>
 </li>
 </ol>
 </div>
@@ -2701,8 +2701,8 @@ This is the solution.</p>
 <div id="more-on-wildcards" class="callout-inner">
 <h3 class="callout-title">More on Wildcards</h3>
 <div class="callout-content">
-<p>Sam has a directory containing calibration data, datasets, and
-descriptions of the datasets:</p>
+<p>Another user has a directory containing calibration data, datasets,
+and descriptions of the datasets:</p>
 <div class="codewrapper sourceCode" id="cb57">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2722,22 +2722,22 @@ descriptions of the datasets:</p>
 <span id="cb57-14"><a href="#cb57-14" tabindex="-1" aria-label="code-block-57-14"></a><span class="ex">├──</span> backup</span>
 <span id="cb57-15"><a href="#cb57-15" tabindex="-1" aria-label="code-block-57-15"></a><span class="ex">│  </span> ├── calibration</span>
 <span id="cb57-16"><a href="#cb57-16" tabindex="-1" aria-label="code-block-57-16"></a><span class="ex">│  </span> └── datasets</span>
-<span id="cb57-17"><a href="#cb57-17" tabindex="-1" aria-label="code-block-57-17"></a><span class="ex">└──</span> send_to_bob</span>
+<span id="cb57-17"><a href="#cb57-17" tabindex="-1" aria-label="code-block-57-17"></a><span class="ex">└──</span> send_to_colleague</span>
 <span id="cb57-18"><a href="#cb57-18" tabindex="-1" aria-label="code-block-57-18"></a>    <span class="ex">├──</span> all_datasets_created_on_a_23rd</span>
 <span id="cb57-19"><a href="#cb57-19" tabindex="-1" aria-label="code-block-57-19"></a>    <span class="ex">└──</span> all_november_files</span></code></pre>
 </div>
-<p>Before heading off to another field trip, she wants to back up her
-data and send some datasets to her colleague Bob. Sam uses the following
+<p>Before heading off to another field trip, they want to back up her
+data and send some datasets to their colleague. they uses the following
 commands to get the job done:</p>
 <div class="codewrapper sourceCode" id="cb58">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" tabindex="-1" aria-label="code-block-58-1"></a><span class="ex">$</span> cp <span class="pp">*</span>dataset<span class="pp">*</span> backup/datasets</span>
 <span id="cb58-2"><a href="#cb58-2" tabindex="-1" aria-label="code-block-58-2"></a><span class="ex">$</span> cp ____calibration____ backup/calibration</span>
-<span id="cb58-3"><a href="#cb58-3" tabindex="-1" aria-label="code-block-58-3"></a><span class="ex">$</span> cp 2015-____-____ send_to_bob/all_november_files/</span>
-<span id="cb58-4"><a href="#cb58-4" tabindex="-1" aria-label="code-block-58-4"></a><span class="ex">$</span> cp ____ send_to_bob/all_datasets_created_on_a_23rd/</span></code></pre>
+<span id="cb58-3"><a href="#cb58-3" tabindex="-1" aria-label="code-block-58-3"></a><span class="ex">$</span> cp 2015-____-____ send_to_colleague/all_november_files/</span>
+<span id="cb58-4"><a href="#cb58-4" tabindex="-1" aria-label="code-block-58-4"></a><span class="ex">$</span> cp ____ send_to_colleague/all_datasets_created_on_a_23rd/</span></code></pre>
 </div>
-<p>Help Sam by filling in the blanks.</p>
+<p>Help them by filling in the blanks.</p>
 <p>The resulting directory structure should look like this</p>
 <div class="codewrapper sourceCode" id="cb59">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2770,7 +2770,7 @@ commands to get the job done:</p>
 <span id="cb59-26"><a href="#cb59-26" tabindex="-1" aria-label="code-block-59-26"></a><span class="ex">│  </span>     ├── 2015-11-23-dataset1.txt</span>
 <span id="cb59-27"><a href="#cb59-27" tabindex="-1" aria-label="code-block-59-27"></a><span class="ex">│  </span>     ├── 2015-11-23-dataset2.txt</span>
 <span id="cb59-28"><a href="#cb59-28" tabindex="-1" aria-label="code-block-59-28"></a><span class="ex">│  </span>     └── 2015-11-23-dataset_overview.txt</span>
-<span id="cb59-29"><a href="#cb59-29" tabindex="-1" aria-label="code-block-59-29"></a><span class="ex">└──</span> send_to_bob</span>
+<span id="cb59-29"><a href="#cb59-29" tabindex="-1" aria-label="code-block-59-29"></a><span class="ex">└──</span> send_to_colleague</span>
 <span id="cb59-30"><a href="#cb59-30" tabindex="-1" aria-label="code-block-59-30"></a>    <span class="ex">├──</span> all_datasets_created_on_a_23rd</span>
 <span id="cb59-31"><a href="#cb59-31" tabindex="-1" aria-label="code-block-59-31"></a>    <span class="ex">│  </span> ├── 2015-10-23-dataset1.txt</span>
 <span id="cb59-32"><a href="#cb59-32" tabindex="-1" aria-label="code-block-59-32"></a>    <span class="ex">│  </span> ├── 2015-10-23-dataset2.txt</span>
@@ -2798,8 +2798,8 @@ commands to get the job done:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" tabindex="-1" aria-label="code-block-60-1"></a><span class="ex">$</span> cp <span class="pp">*</span>calibration.txt backup/calibration</span>
-<span id="cb60-2"><a href="#cb60-2" tabindex="-1" aria-label="code-block-60-2"></a><span class="ex">$</span> cp 2015-11-<span class="pp">*</span> send_to_bob/all_november_files/</span>
-<span id="cb60-3"><a href="#cb60-3" tabindex="-1" aria-label="code-block-60-3"></a><span class="ex">$</span> cp <span class="pp">*</span>-23-dataset<span class="pp">*</span> send_to_bob/all_datasets_created_on_a_23rd/</span></code></pre>
+<span id="cb60-2"><a href="#cb60-2" tabindex="-1" aria-label="code-block-60-2"></a><span class="ex">$</span> cp 2015-11-<span class="pp">*</span> send_to_colleague/all_november_files/</span>
+<span id="cb60-3"><a href="#cb60-3" tabindex="-1" aria-label="code-block-60-3"></a><span class="ex">$</span> cp <span class="pp">*</span>-23-dataset<span class="pp">*</span> send_to_colleague/all_datasets_created_on_a_23rd/</span></code></pre>
 </div>
 </div>
 </div>
@@ -2813,8 +2813,8 @@ commands to get the job done:</p>
 <div id="organizing-directories-and-files" class="callout-inner">
 <h3 class="callout-title">Organizing Directories and Files</h3>
 <div class="callout-content">
-<p>Jamie is working on a project, and she sees that her files aren’t
-very well organized:</p>
+<p>User abc123 is working on a project, and they sees that their files
+aren’t very well organized:</p>
 <div class="codewrapper sourceCode" id="cb61">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2827,7 +2827,7 @@ very well organized:</p>
 </div>
 <p>The <code>fructose.dat</code> and <code>sucrose.dat</code> files
 contain output from her data analysis. What command(s) covered in this
-lesson does she need to run so that the commands below will produce the
+lesson do they need to run so that the commands below will produce the
 output shown?</p>
 <div class="codewrapper sourceCode" id="cb63">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2864,7 +2864,7 @@ output shown?</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb67-1"><a href="#cb67-1" tabindex="-1" aria-label="code-block-67-1"></a><span class="fu">mv</span> <span class="pp">*</span>.dat analyzed</span></code></pre>
 </div>
-<p>Jamie needs to move her files <code>fructose.dat</code> and
+<p>User abc123 needs to move their files <code>fructose.dat</code> and
 <code>sucrose.dat</code> to the <code>analyzed</code> directory. The
 shell will expand *.dat to match all .dat files in the current
 directory. The <code>mv</code> command then moves the list of .dat files
@@ -3268,7 +3268,7 @@ instead:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The <code>-n</code> option specifies a numerical rather than an
 alphanumerical sort.</p>
@@ -3384,7 +3384,7 @@ the output files.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>In the first example with <code>&gt;</code>, the string ‘hello’ is
 written to <code>testfile01.txt</code>, but the file gets overwritten
@@ -3437,7 +3437,7 @@ After these commands, select the answer that corresponds to the file
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Option 3 is correct. For option 1 to be correct we would only run the
 <code>head</code> command. For option 2 to be correct we would only run
@@ -3543,7 +3543,7 @@ least number of lines. Which command listed below would work?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Option 4 is the solution. The pipe character <code>|</code> is used
 to connect the output from one command to the input of another.
@@ -3609,7 +3609,7 @@ understanding</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The <code>head</code> command extracts the first 5 lines from
 <code>animals.csv</code>. Then, the last 3 lines are extracted from the
@@ -3674,7 +3674,7 @@ duplicates in their names)?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3725,7 +3725,7 @@ animal appears in the file?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>Option 4 is the correct answer. If you have difficulty understanding
 why, try running the commands, or sub-sections of the pipelines (make
@@ -3843,7 +3843,7 @@ Which of the following would remove all the processed data files, and
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>This would remove <code>.txt</code> files with one-character
@@ -4117,7 +4117,7 @@ like a list of numbers or a subset of data.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4191,7 +4191,7 @@ identical output.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The first code block gives the same output on each iteration through
 the loop. Bash expands the wildcard <code>*.pdb</code> within the loop
@@ -4266,7 +4266,7 @@ The value of the <code>datafile</code> variable is evaluated using
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>4 is the correct answer. <code>*</code> matches zero or more
 characters, so any file name starting with the letter c, followed by
@@ -4310,7 +4310,7 @@ be listed.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>4 is the correct answer. <code>*</code> matches zero or more
 characters, so a file name with zero or more characters before a letter
@@ -4361,7 +4361,7 @@ will be saved to a file called <code>alkanes.pdb</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The text from each file in turn gets written to the
@@ -4417,7 +4417,7 @@ file called <code>all.pdb</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>3 is the correct answer. <code>&gt;&gt;</code> appends to a file,
 rather than overwriting it with the redirected output from a command.
@@ -4806,7 +4806,7 @@ would we want to run?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>The second version is the one we want to run. This prints to screen
 everything enclosed in the quote marks, expanding the loop variable name
@@ -4855,7 +4855,7 @@ following code:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <p>We have a nested loop, i.e. contained within another loop, so for
 each species in the outer loop, the inner loop (the nested loop)
@@ -6524,8 +6524,8 @@ command.</li>
   "url": "https://swcarpentry.github.io/shell-novice/instructor/aio.html",
   "identifier": "https://swcarpentry.github.io/shell-novice/instructor/aio.html",
   "dateCreated": "2014-10-22",
-  "dateModified": "2026-09-02",
-  "datePublished": "2026-09-02"
+  "dateModified": "2026-09-03",
+  "datePublished": "2026-09-03"
 }
 
   </script><script>
