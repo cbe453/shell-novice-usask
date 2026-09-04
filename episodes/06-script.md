@@ -384,18 +384,18 @@ what they discover about their data and their workflow with one call to `history
 and a bit of editing to clean up the output
 and save it as a shell script.
 
-## Nelle's Pipeline: Creating a Script
+## User abc123's Pipeline: Creating a Script
 
-Nelle's supervisor insisted that all her analytics must be reproducible.
+Our user's supervisor insisted that all their analytics must be reproducible.
 The easiest way to capture all the steps is in a script.
 
-First we return to Nelle's project directory:
+First we return to abc123's project directory:
 
 ```bash
 $ cd ../../north-pacific-gyre/
 ```
 
-She creates a file using `nano` ...
+They create a file using `nano` ...
 
 ```bash
 $ nano do-stats.sh
@@ -412,14 +412,14 @@ do
 done
 ```
 
-She saves this in a file called `do-stats.sh`
-so that she can now re-do the first stage of her analysis by typing:
+They save this in a file called `do-stats.sh`
+so that they can now re-do the first stage of her analysis by typing:
 
 ```bash
 $ bash do-stats.sh NENE*A.txt NENE*B.txt
 ```
 
-She can also do this:
+They can also do this:
 
 ```bash
 $ bash do-stats.sh NENE*A.txt NENE*B.txt | wc -l
@@ -428,9 +428,9 @@ $ bash do-stats.sh NENE*A.txt NENE*B.txt | wc -l
 so that the output is just the number of files processed
 rather than the names of the files that were processed.
 
-One thing to note about Nelle's script is that
+One thing to note about this script is that
 it lets the person running it decide what files to process.
-She could have written it as:
+It could be written as:
 
 ```bash
 # Calculate stats for Site A and Site B data files.
@@ -442,13 +442,13 @@ done
 ```
 
 The advantage is that this always selects the right files:
-she doesn't have to remember to exclude the 'Z' files.
-The disadvantage is that it *always* selects just those files --- she can't run it on all files
+they don't have to remember to exclude the 'Z' files.
+The disadvantage is that it *always* selects just those files --- they can't run it on all files
 (including the 'Z' files),
-or on the 'G' or 'H' files her colleagues in Antarctica are producing,
+or on the 'G' or 'H' files their colleagues in Antarctica are producing,
 without editing the script.
-If she wanted to be more adventurous,
-she could modify her script to check for command-line arguments,
+If they wanted to be more adventurous,
+they could modify the script to check for command-line arguments,
 and use `NENE*A.txt NENE*B.txt` if none were provided.
 Of course, this introduces another tradeoff between flexibility and complexity.
 
