@@ -84,7 +84,7 @@ environments by default put your user name and the host name before the `$`. Suc
 a prompt might look like, e.g.:
 
 ```bash
-nelle@localhost $
+abc123@localhost $
 ```
 
 The prompt might even include more than this. Do not worry if your prompt is not

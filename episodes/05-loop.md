@@ -564,7 +564,7 @@ Since they're still learning how to use the shell,
 they decide to build up the required commands in stages.
 Their first step is to make sure that they can select the right input files --- remember,
 these are ones whose names end in 'A' or 'B', rather than 'Z'.
-Moving to the `north-pacific-gyre` directory, Nelle types:
+Moving to the `north-pacific-gyre` directory, they type:
 
 ```bash
 $ cd
