@@ -857,7 +857,7 @@ and their data processing scripts.
 Each of their physical samples is labelled according to their lab's convention
 with a unique ten-character ID,
 such as 'NENE01729A'.
-This ID is what they used in her collection log
+This ID is what they used in their collection log
 to record the location, time, depth, and other characteristics of the sample,
 so they decide to use it within the filename of each data file.
 Since the output of the assay machine is plain text,
