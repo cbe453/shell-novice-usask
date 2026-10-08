@@ -953,7 +953,7 @@ $ cp *-23-dataset* send_to_colleague/all_datasets_created_on_a_23rd/
 
 ## Organizing Directories and Files
 
-User abc123 is working on a project, and they sees that their files aren't very well
+User abc123 is working on a project, and they see that their files aren't very well
 organized:
 
 ```bash
@@ -964,7 +964,7 @@ $ ls -F
 analyzed/  fructose.dat    raw/   sucrose.dat
 ```
 
-The `fructose.dat` and `sucrose.dat` files contain output from her data
+The `fructose.dat` and `sucrose.dat` files contain output from their data
 analysis. What command(s) covered in this lesson do they need to run
 so that the commands below will produce the output shown?
 
