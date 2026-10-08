@@ -125,37 +125,36 @@ is not installed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Nelle's Pipeline: A Typical Problem
+## Pipelines: A Typical Problem
 
-Nelle Nemo, a marine biologist,
+Imagine a user (abc123), a marine biologist,
 has just returned from a six-month survey of the
 [North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre),
-where she has been sampling gelatinous marine life in the
+where they have been sampling gelatinous marine life in the
 [Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch).
-She has 1520 samples that she's run through an assay machine to measure the relative abundance
+They have 1520 samples that were run through an assay machine to measure the relative abundance
 of 300 proteins.
-She needs to run these 1520 files through an imaginary program called `goostats.sh`.
-In addition to this huge task, she has to write up results by the end of the month, so her paper
+They then need to run these 1520 files through an imaginary program called `goostats.sh`.
+In addition to this huge task, they have to write up results by the end of the month, so their paper
 can appear in a special issue of *Aquatic Goo Letters*.
 
-If Nelle chooses to run `goostats.sh` by hand using a GUI,
-she'll have to select and open a file 1520 times.
+If the user chooses to run `goostats.sh` by hand using a GUI,
+they'll have to select and open a file 1520 times.
 If `goostats.sh` takes 30 seconds to run each file, the whole process will take more than 12 hours
-of Nelle's attention.
-With the shell, Nelle can instead assign her computer this mundane task while she focuses
-her attention on writing her paper.
+of our user's attention.
+With the shell, they can instead assign the computer this mundane task while they focus attention on writing their paper.
 
-The next few lessons will explore the ways Nelle can achieve this.
+The next few lessons will explore the ways we can achieve this.
 More specifically,
-the lessons explain how she can use a command shell to run the `goostats.sh` program,
+the lessons explain how we can use a command shell to run the `goostats.sh` program,
 using loops to automate the repetitive steps of entering file names,
-so that her computer can work while she writes her paper.
+so that our computers can work while we work on other tasks.
 
 As a bonus,
-once she has put a processing pipeline together,
-she will be able to use it again whenever she collects more data.
+once a processing pipeline is put together,
+it can be used again whenever more data is collected.
 
-In order to achieve her task, Nelle needs to know how to:
+In order to achieve this task, user abc123 needs to know how to:
 
 - navigate to a file/directory
 - create a file/directory
