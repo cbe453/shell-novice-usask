@@ -675,7 +675,7 @@ Run `cd -` again and you're back in `~/shell-lesson-data/exercise-data/creatures
 ## Absolute vs Relative Paths
 
 Starting from `/home/abc123/data`,
-which of the following commands could abc123 use to navigate to her home directory,
+which of the following commands could abc123 use to navigate to their home directory,
 which is `/home/abc123`?
 
 1. `cd .`
@@ -713,7 +713,7 @@ which is `/home/abc123`?
 
 ## Relative Path Resolution
 
-Using the filesystem diagram below, if `pwd` displays `/home/thing`,
+Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 what will `ls -F ../backup` display?
 
 1. `../backup: No such file or directory`
