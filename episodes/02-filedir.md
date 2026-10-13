@@ -125,8 +125,8 @@ it's just a separator.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Underneath `/home`,
-we find one directory for each user with an account on abc123's machine,
-her colleagues *imhotep* and *larry*.
+we find one directory for each user with an account on Plato,
+for example *abc234* and *cba321*.
 
 ![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/home" like "/home/imhotep", "/home/larry" or"/home/abc123"'}
 
