@@ -665,12 +665,12 @@ $ wc -l *.txt | sort -n | head -n 5
 ```
 
 Whoops: one of the files is 60 lines shorter than the others.
-When they go back and checks it,
+When they go back and check it,
 they see that they did that assay at 8:00 on a Monday morning --- someone
 was probably in using the machine on the weekend,
 and they forgot to reset it.
 Before re-running that sample,
-they checks to see if any files have too much data:
+they check to see if any files have too much data:
 
 ```bash
 $ wc -l *.txt | sort -n | tail -n 5

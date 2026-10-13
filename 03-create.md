@@ -266,8 +266,6 @@ $ touch my_file.txt
 ```
 
 1. What did the `touch` command do?
-  When you look at your current directory using the GUI file explorer,
-  does the file show up?
 
 2. Use `ls -l` to inspect the files.  How large is `my_file.txt`?
 
@@ -311,7 +309,7 @@ $ rm my_file.txt
 
 ## What's In A Name?
 
-You may have noticed that all of Nelle's files are named 'something dot
+You may have noticed that all of abc123's files are named 'something dot
 something', and in this part of the lesson, we always used the extension
 `.txt`.  This is just a convention; we can call a file `mythesis` or
 almost anything else we want. However, most people use two-part names
